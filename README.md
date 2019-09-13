@@ -23,9 +23,6 @@ account) and deposit funds (i.e., place money into an account). The user interfa
 - a cash dispenser that dispenses cash to the user and
 - a deposit slot that receives deposit envelopes from the user.
 
-The cash dispenser begins each day loaded with 500 $20 bills. [Note: Owing to the limited scope of this case study, certain elements of the ATM described here do not accurately mimic those of a real ATM. For example, a real ATM typically contains a device that reads a user’s account number from an ATM card, whereas this ATM asks the user to type the account number on the keypad. A real ATM also usually prints a receipt at the end of a session, but all output from this ATM appears on the screen.]
-
-
 Upon first approaching the ATM, the user should experience the following sequence of events: 
 
 
