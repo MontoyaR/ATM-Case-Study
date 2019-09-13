@@ -1,6 +1,4 @@
-## 
-
-ATM Case Study
+## ATM Case Study
 
 _Object-Oriented Project_
 
