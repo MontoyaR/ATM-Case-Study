@@ -1,3 +1,4 @@
+
 ## ATM Case Study
 
 _Object-Oriented Project_
@@ -10,6 +11,7 @@ _Object-Oriented Project_
 **September 13, 2019**
 
 -   Added requirements to README using StackEdit
+-   Added to Notes
 
 ## Requirements Document
 
@@ -61,3 +63,40 @@ The screen displays a message reminding the user to take the money. The followin
 5. If the deposit slot receives a deposit envelope within two minutes, the ATM credits the deposit amount to the user’s account in the bank’s database (i.e., adds the deposit amount to the user’s account balance). [Note: This money is not immediately available for withdrawal. The bank first must physically verify the amount of cash in the deposit envelope, and any checks in the envelope must clear (i.e., money must be transferred from the check writer’s account to the check recipient’s account). When either of these events occurs, the bank appropriately updates the user’s balance stored in its database. This occurs independently of the ATM system.] If the deposit slot does not receive a deposit envelope within this time period, the screen displays a message that the system has canceled the transaction due to inactivity. The ATM then displays the main menu and waits for user input. 
 
 After the system successfully executes a transaction, it should return to the main menu so that the user can perform additional transactions. If the user exits the system, the screen should display a thank you message, then display the welcome message for the next user.
+
+
+
+
+## Notes:
+_September 13, 2019_ 
+
+The figure below shows the ***use case diagram*** for the ATM system. The stick figure represents an **actor**, which is an entity that interacts with the system.
+
+![enter image description here](https://lh3.googleusercontent.com/2tNS9fvdK--myhuWxqeXwBZOzbGlCNUMXAFB3Tp7sRg9N2UYDMDS-x52utoQXCrnHhIIprClt4xB)
+
+Use Case Diagrams are used to model the interactions between a system's clients (bank customers) 
+ and its use cases. The goal is to show the kinds of interactions users have with a system without providing details.
+
+![enter image description here](https://lh3.googleusercontent.com/E7jwLs1qhQ8-Ox5fkCbLenb42kSQAx38GlPQgaK6vbL5EEGMCQlBguLezc0PRQDGo5RUqV4tX3dn)
+
+These are key nouns and noun phrases to help identify classes that can potentially be implemented into the ATM system. 
+
+ - Bank cannot be modeled as a class because it is not part of the ATM system.
+ - Customer and user represent entities, whom interact with the ATM but do not need to be modeled as a class in the ATM software.
+ - $20 bill and deposit envelope are physical objects in the real world but do not represent parts that are to be automated.
+ - Representing money and balance as attributes of classes is appropriate. Likewise account number and PIN represent important attributes of a bank account because they do not exhibit behaviors.
+ - Though the requirements document frequently describes a “transaction” in a general sense, it is best to use the object-oriented concept of inheritance by modeling the three types of transactions (balance inquiry, withdrawal, and deposit) as individual classes.
+
+**Determined Classes:**
+
+ - ATM
+ - screen
+ - keypad
+ - cash dispenser
+ - deposit slot
+ - account
+ - bank database
+ - balance inquiry
+ - withdrawal deposit
+
+ 
