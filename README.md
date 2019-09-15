@@ -126,6 +126,10 @@ The figure below lists the words or phrases from the requirements document that 
 
 The class diagram below lists some of the attributes for the classes in our system. UserAuthenticated attribute writing as a boolean variable: **userAuthenticated Boolean = false;** The attribute declaration contains three pieces of information—attribute name: userAuthenticated, attribute type: Boolean and the attribute can be represented by a primitive data type.
 
+_Verbs and verb phrases for each class in the ATM system:_
+
+![enter image description here](https://lh3.googleusercontent.com/BLs-GRxaJ4g0qDjbUdPvXefCAnQ0qxZBKxHxW6GEG8YXb5CyRkbFg2aiebK0mqjrReAwt102_4tO)
+
 **Identifying Object's States and Activities**
 
 Each object in a system goes through a series of states. An object's state is indicated by the value of its attributes at a given time. **State Machine Diagrams** model several states of an object and show under what circumstances the object changes states.
@@ -140,7 +144,8 @@ An operation is a service that objects of a class provide to clients (users) of 
 
 Consider the operations of some real-world objects. A radio’s operations include setting its station and volume (typically invoked by a person’s adjusting the radio's controls). A car’s operations include accelerating (invoked by the driver’s pressing the accelerator pedal), decelerating (invoked by the driver’s pressing the brake pedal or releasing the gas pedal), turning and shifting gears. Software objects can offer operations as well—for example, a software graphics object might offer operations for drawing a circle, drawing a line, drawing a square and the like. A spreadsheet software object might offer operations like printing the spreadsheet, totaling the elements in a row or column and graphing information in the spreadsheet as a bar chart or pie chart.
 
-_Verbs and verb phrases for each class in the ATM system:_
+![enter image description here](https://lh3.googleusercontent.com/p52uVyrETgpt7BZUhqnf58fkN3Fe6JiqKkjl6cEkBBL4uPIm-I2hwpO6-xewFiBasywQnp_WOzGV)
 
-![enter image description here](https://lh3.googleusercontent.com/BLs-GRxaJ4g0qDjbUdPvXefCAnQ0qxZBKxHxW6GEG8YXb5CyRkbFg2aiebK0mqjrReAwt102_4tO)
+To identify operations, we examine the verb phrases listed for each class above. The “executes financial transactions” phrase associated with class ATM implies that class ATM instructs transactions to execute. Therefore, classes BalanceInquiry, Withdrawal and Deposit each need an operation to provide this service to the ATM. We place this operation (which we’ve named execute) in the third compartment of the three transaction classes in the updated class diagram. During an ATM session, the ATM object will invoke these transaction operations as necessary.
 
+![enter image description here](https://lh3.googleusercontent.com/bwcJMpZU6DZj3QrfzNyNztGA95ODaHWGHP5LeVruvrzEA-OwW1oNnrxmz0NrHtY6shs6RXl7S3HQ)
