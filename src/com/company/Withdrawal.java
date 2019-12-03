@@ -5,22 +5,22 @@ package com.company;
  */
 public class Withdrawal extends Transactions {
 
-  // Attributes
+  // private attributes
   private int accountNumber;  // account to withdraw funds from
   private double amount;  // amount to withdraw
 
-  // Reference to associated objects
+  // reference to associated objects
   private Screen screen;  // ATM's screen
   private Keypad keypad;  // ATM's keypad
   private CashDispenser cashDispenser;  // ATM's cash dispenser
   private BankDatabase bankDatabase;  // Account info database
 
-  // No argument constructor
+  // no argument constructor
   public Withdrawal(){
 
   }
 
-  // Operations
+  // operations
   public void execute(){
 
   }
