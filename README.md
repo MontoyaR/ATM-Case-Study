@@ -8,10 +8,12 @@ _Object-Oriented Project_
 
 -   Briefly glanced through the project and analyzed objectives required.
 
-**September 13, 2019,**
+**September 13, 2019**
 
 -   Added requirements to README using StackEdit
 -   Added to Notes
+
+**December 3, 2019**
 
 ## Requirements Document
 
